@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Welcome, Dandelion!</title>
+  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <b:skin>
+    <style>
+      P {
+       text-indent: 1.5em;
+       text-align: justify;
+      }
+    </style>
+  </b:skin>
+</head>
+
+<body>
+    <p>Hi my Dandelion!</p>
+    <p>It's time to set up a Virtual Environment. A virtual environment is a tool that helps to keep dependencies required by different projects separate by creating isolated python virtual environments for them. This is one of the most important tools that most of the Python developers use.</p>
+    <table>
+        <tbody>
+          <tr style="background-color: #cccccc;">
+            <td>
+    <code>
+    $ <b>sudo apt install -y python3-venv</b> # Now you are installing the <b>venv</b> module<br>
+    <br>
+    $ <b>cd ~/work/project_01</b> # you can use <b>~</b> instead of <b>$HOME</b><br>
+    <br>
+    $ <b>python3 -m venv my_env</b> # create an environment (<b>my_env</b> is the special directory in the /home/lyaki4/work/project_01/ with a lot of directories and files inside)<br>
+    <br>
+    $ <b>ls my_env</b> # what inside of directory <b>my_env</b><br>
+    bin&nbsp;&nbsp;include&nbsp;&nbsp;lib&nbsp;&nbsp;lib64&nbsp;&nbsp;pyvenv.cfg<br>
+    $ <b>$ ls my_env/bin/</b> # what inside of <b>bin</b> in derectory <b>my_env</b><br>
+    Activate.ps1&nbsp;&nbsp;activate&nbsp;&nbsp;activate.csh&nbsp;&nbsp;activate.fish&nbsp;&nbsp;pip&nbsp;&nbsp;pip3&nbsp;&nbsp;pip3.10&nbsp;&nbsp;python&nbsp;&nbsp;python3&nbsp;&nbsp;python3.10
+    </code>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+    <span><!--more--></span>
+    <p>Great! You have created your first "sandbox". Next step is activation.</p>
+    <table>
+        <tbody>
+          <tr style="background-color: #cccccc;">
+            <td>
+    <code>
+    $ <b>source my_env/bin/activate</b><br>
+    (my_env) lyaki4@ubuntu:~/work/project_01$<br>
+    </code>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+    <p><b>(my_env)</b> before command prompt indicate that you are into the virtual environment now.</p>
+    <table>
+        <tbody>
+          <tr style="background-color: #cccccc;">
+            <td>
+    <code>
+    $ <b>nano hello.py</b> # open the simple text editor <b>"nano"</b> and create file <b>"hello.py"</b><br>
+    </code>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+    <p>Type out <b>print("Hello, World!")</b>, then press CTRL+X, Y, and ENTER</p>
+    <p>So, it's time to execute your first programm.</p>
+    <table>
+        <tbody>
+          <tr style="background-color: #cccccc;">
+            <td>
+    <code>
+    (my_env) lyaki4@ubuntu:~/work/project_01$ <b>python hello.py</b><br>
+    Hello, World!
+    </code>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+    <p>So, you can work in python command line or with file scripts. Moreover, you can use special programms for writing code (IDE - Integrated Development Environment).</p>
+    <p>Finaly, to leave the environment, type the command <b>deactivate</b> and you will return to your original directory.</p>
+    <table>
+        <tbody>
+          <tr style="background-color: #cccccc;">
+            <td>
+    <code>
+    (my_env) lyaki4@ubuntu:~/work/project_01$ <b> deactivate </b><br>
+    lyaki4@ubuntu:~/work/project_01$
+    </code>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+    <dl>
+        <dt>Since today you know following:</dt>
+        <dd><b>ls</b> - list directory contents (you can use that command with keys -alF, or activate the aliases in your profile)</dd>
+        <dd><b>source</b> - Execute commands from a file in the current shell</dd>
+        <dd><b>nano</b> - nano  is a small and friendly editor</dd>
+      </dl>
+      <p>Here is a couple of russian language video about virtual environment.</p>
+      <div class="separator" style="clear: both; text-align: center;"><iframe class="BLOG_video_class" allowfullscreen="" youtube-src-id="OvocRhD9WSA" width="200" height="166" src="https://www.youtube.com/embed/OvocRhD9WSA"></iframe></div>
+      <div class="separator" style="clear: both; text-align: center;"><iframe class="BLOG_video_class" allowfullscreen="" youtube-src-id="sBJ1y0AFhNs" width="200" height="166" src="https://www.youtube.com/embed/sBJ1y0AFhNs"></iframe></div>
+      <p>Awesome!</p>
+</body>
+</html>

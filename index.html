@@ -3,16 +3,100 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
+  <title>Welcome, Dandelion!</title>
   <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <b:skin>
+    <style>
+      P {
+       text-indent: 1.5em;
+       text-align: justify;
+      }
+    </style>
+  </b:skin>
 </head>
 
 <body>
-
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
-
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-
+  <div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg697UjqYf_1v2PoYZsHZY0xSSl7Sb_9Bn_HCbOECRm3GkU6KH5nurQLBPtqa3O7JbnqSGo_crLOZtEVgKR1M9eYoVh1qdAs2I6qyq_uuumaPvgk4p4ENphmgzWuE_MCRqY3DRGNLAtsy1EwSxgjI6yo92R4YtsDs6wQXeteubwcI8NNQMRyWgC0_Dt/s160/3692d517a7bc4dc2a576408c8bc9ea1a.jpeg" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" width="200" data-original-height="105" data-original-width="160" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg697UjqYf_1v2PoYZsHZY0xSSl7Sb_9Bn_HCbOECRm3GkU6KH5nurQLBPtqa3O7JbnqSGo_crLOZtEVgKR1M9eYoVh1qdAs2I6qyq_uuumaPvgk4p4ENphmgzWuE_MCRqY3DRGNLAtsy1EwSxgjI6yo92R4YtsDs6wQXeteubwcI8NNQMRyWgC0_Dt/s200/3692d517a7bc4dc2a576408c8bc9ea1a.jpeg"/></a></div>
+<p>Hi, my dear Dandelion! I'm really happy to see you here. Let's get started.</p>
+<p>Since you already have administrator privileges, you can install and delete applications and do many other things. By the way, we will also learn common commands for Linux.</p>
+<span><!--more--></span>
+<p>Ok, open the terminal and find out what the python version is installed.
+<table>
+  <tbody>
+    <tr style="background-color: #cccccc;">
+      <td>
+<code>
+  $ <b>python3 --version</b><br>
+Python 3.8.10<br>
+</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+If you see something like that, congrats! You already have installed Python.</p>
+<table>
+  <tbody>
+    <tr style="background-color: #cccccc;">
+      <td>
+<code>
+$ <b>python3 --version</b><br>
+-bash: python3: command not found<br>
+</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>But if you see the phrase <b>"python: command not found"</b>, it stands you don't have any python versions on your laptop, and you have to install it.</p>
+<p>Follow this link <a href="https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-ubuntu-22-04">"How To Install Python 3 and Set Up a Programming Environment on Ubuntu 22.04"</a> if you need to install Python.</p>
+<p>Move on, create a new folder in your $HOME (this is your private directory in the Linux system. "Folder" and "Directory" are the same. Notice that <b>$HOME</b> is a variable. Type "echo $HOME" in command line.)</p>
+<table>
+  <tbody>
+    <tr style="background-color: #cccccc;">
+      <td>
+<code>
+lyaki4@ubuntu:~$ <b>echo $HOME</b> # This is my home folder<br>
+/home/lyaki4<br>
+<br>
+lyaki4@ubuntu:~$ <b>pwd</b> # "Print Working Directory" - where I am<br>
+/home/lyaki4<br>
+<br>
+lyaki4@ubuntu:~$ <b>mkdir work</b> # Create folder "work" in the current directory<br>
+<br>
+lyaki4@ubuntu:~$ <b>cd work</b> # Change current directory to "$HOME/work"<br>
+<br>
+lyaki4@ubuntu:~/work$ <b>pwd</b> # "Print Workin Directory" - where I am<br>
+/home/lyaki4/work<br>
+<br>
+lyaki4@ubuntu:~/work$ <b>mkdir project_01 && cd $_</b> # Create folder "project_01" in "work" and change directory to it<br>
+lyaki4@ubuntu:~/work/project_01$<br>
+</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>symbol <b>#</b> is a beginning of comments.</p>
+<table>
+  <tbody>
+    <tr style="background-color: #cccccc;">
+      <td>
+<code>
+  $ <b>sudo apt update </b> # Do that always before installation of a new software<br>
+  $ <b>sudo apt install -y python3-pip</b> # You are going to install package pip. PIP is a package manager for Python packages.<br>
+  $ <b>sudo apt install -y build-essential libssl-dev libffi-dev python3-dev</b> # These are few more packages for work with Python<br>
+</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<dl>
+  <dt>Since today you know following:</dt>
+  <dd><b>echo</b> - display a line of text</dd>
+  <dd><b>pwd</b> - print name of current/working directory</dd>
+  <dd><b>mkdir</b> - make directories</dd>
+  <dd><b>cd</b> - Change the shell working directory</dd>
+  <dd><b>sudo</b> - execute a command as another user</dd>
+  <dd><b>apt</b> - commandline interface for the package management system</dd>
+</dl>
+<p>Awesome!</p>
 </body>
 </html>
